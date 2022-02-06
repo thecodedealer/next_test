@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npx create-next-app@latest
+    - run: npm i -g next
     - run: npm run build
 
