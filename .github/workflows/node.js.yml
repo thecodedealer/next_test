@@ -32,9 +32,10 @@ jobs:
       run: npm install
     - name: Build app 
       run: npm run build
-    - name: Deploy to gh-pages  
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Move to deploy branch
+      uses: ActionwareIO/branch-push-action@action
       with: 
+        branch: deploy
+        files: ./.next
         deploy_key: ${{ secrets.GH_CI_TOKEN }}
-        publish_dir: ./build
 
