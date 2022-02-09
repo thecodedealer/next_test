@@ -2,4 +2,4 @@
 deployment:
   task:
     - export DEPLOYPATH=/home/ngenious/public_html/solutiidepozitare.ro
-    - /bin/cp build $DEPLOYPATH
+    - cp -R build $DEPLOYPATH
