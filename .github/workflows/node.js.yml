@@ -41,4 +41,11 @@ jobs:
           .cpanel.yml
           ./test.html
         deploy_key: ${{ secrets.GH_CI_TOKEN }}
+    - name: Push code to cPanel
+      uses: thezzisu/git-repo-deploy-action@v1.0.2
+      with:
+        repo: ssh://ngenious@ngenious.ro:22224/home/ngenious/test_auto_deploy
+        name: thezzisu
+        email: thezzisu@gmail.com
+        branch: latest
 
