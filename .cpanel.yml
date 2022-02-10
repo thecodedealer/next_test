@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - bash test.sh
+    - export DEPLOYPATH=/home/ngenious/public_html/solutiidepozitare.ro
+    - /bin/cp -R build $DEPLOYPATH
+    - /bin/cp test.html $DEPLOYPATH
