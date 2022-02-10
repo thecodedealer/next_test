@@ -44,12 +44,12 @@ jobs:
     - name: Use SSH key
       uses: webfactory/ssh-agent@v0.5.4
       with:
-        ssh-private-key: ${{ secrets.GH_CI_TOKEN }}
+        ssh-private-key: ${{ secrets.C_PANEL_PRIVATE_KEY }}
     - name: Push code to cPanel
       uses: thezzisu/git-repo-deploy-action@v1.0.2
       with:
         repo: ssh://ngenious@ngenious.ro:22224/home/ngenious/test_auto_deploy
-        name: thezzisu
-        email: thezzisu@gmail.com
-        branch: latest
+        name: test
+        email: test@test.com
+        branch: main
 
