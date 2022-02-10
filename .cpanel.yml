@@ -1,6 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/ngenious/public_html/solutiidepozitare.ro
-    - export REPO_PATH=/home/ngenious/repositories/next_test_2/*
-    - /bin/cp -r REPO_PATH DEPLOY_PATH
+    - /bin/cp -r /home/ngenious/repositories/next_test_2/* /home/ngenious/public_html/solutiidepozitare.ro
