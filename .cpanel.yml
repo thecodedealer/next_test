@@ -1,4 +1,9 @@
+#---
+#deployment:
+#  tasks:
+#    - /bin/cp -r /home/ngenious/repositories/next_test_2/* /home/ngenious/public_html/solutiidepozitare.ro
 ---
 deployment:
   tasks:
-    - /bin/cp -r /home/ngenious/repositories/next_test_2/* /home/ngenious/public_html/solutiidepozitare.ro
+    - export DEPLOYPATH=/home/glades/public_html
+    - /bin/cp -r /home/glades/<repositories>/<repo>/* $DEPLOYPATH

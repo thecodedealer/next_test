@@ -40,5 +40,6 @@ jobs:
           ./build
           .cpanel.yml
           ./test.html
+          ./test.sh
         deploy_key: ${{ secrets.GH_CI_TOKEN }}
 
